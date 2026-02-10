@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pulkit Steels</title>
+    <style>
+        /* --- General Styling --- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        a { text-decoration: none; color: inherit; }
+        ul { list-style: none; padding: 0; }
+
+        /* --- Navigation --- */
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        /* --- Hero Section --- */
+        #hero {
+            background: #ecf0f1;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        #hero h1 { margin-bottom: 0.5rem; font-size: 2.5rem; }
+        #hero p { font-size: 1.2rem; color: #555; }
+
+        /* --- About Section --- */
+        #about { padding: 3rem 0; }
+        .about-content { text-align: center; max-width: 700px; margin: auto; }
+
+        /* --- Products Section --- */
+        #products {
+            background: #f9f9f9;
+            padding: 3rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: #2c3e50;
+        }
+
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 300px;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-img {
+            width: 100%;
+            height: 200px;
+            background-color: #ddd; /* Placeholder color */
+            margin-bottom: 1rem;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .product-card h3 { margin: 0 0 0.5rem; }
+        .product-card p { font-size: 0.9rem; color: #666; }
+
+        /* --- Contact Section --- */
+        #contact {
+            padding: 4rem 0;
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+        }
+
+        .contact-box {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        .phone-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #3498db;
+            display: block;
+            margin-top: 10px;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background: #222;
+            color: #888;
+            text-align: center;
+            padding: 1rem 0;
+            font-size: 0.8rem;
+        }
+        
+        /* Mobile adjustment */
+        @media (max-width: 768px) {
+            .container { flex-direction: column; text-align: center; }
+            nav ul { margin-top: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">MyBrand</div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h1>Welcome to MyBrand</h1>
+            <p>Quality Products. Exceptional Service. Delivered to You.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container about-content">
+            <h2 class="section-title">About Our Company</h2>
+            <p>
+                Founded in 2024, MyBrand has been dedicated to providing the best quality products 
+                in the market. We believe in sustainability, customer satisfaction, and innovation.
+                Our team works tirelessly to ensure that every product we ship meets our rigorous standards.
+            </p>
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="container">
+            <h2 class="section-title">Our Products</h2>
+            <div class="product-grid">
+                
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Product 1" class="product-img">
+                    <h3>Premium Widget A</h3>
+                    <p>This is our flagship product. Durable, stylish, and perfect for everyday use.</p>
+                    <p><strong>$49.99</strong></p>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Product 2" class="product-img">
+                    <h3>Deluxe Gadget B</h3>
+                    <p>Designed for professionals who need efficiency and speed. Comes with a 2-year warranty.</p>
+                    <p><strong>$89.99</strong></p>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300x200" alt="Product 3" class="product-img">
+                    <h3>Standard Tool C</h3>
+                    <p>An affordable option that doesn't compromise on quality. Great for beginners.</p>
+                    <p><strong>$29.99</strong></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Get in Touch</h2>
+            <div class="contact-box">
+                <p>Have questions? Call us directly.</p>
+                <a href="tel:+15550123456" class="phone-number">+1 (555) 012-3456</a>
+                <p style="margin-top: 1rem;">Email: info@mycompany.com</p>
+                <p>Location: 123 Business Rd, Tech City</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MyBrand Company. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
